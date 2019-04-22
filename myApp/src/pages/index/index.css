@@ -1,0 +1,50 @@
+.wrap{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.add{
+  position: absolute;
+  bottom:0;
+  left:0;
+  background:#000;
+  color: #fff;
+  width:100%;
+  height:100rpx;
+  line-height:100rpx;
+  text-align:center;
+  border-radius: 12rpx;
+}
+
+.personal{
+  position: absolute;
+  bottom:100rpx;
+  right:12rpx;
+}
+
+.personal .my{
+  width:100rpx;
+  height:100rpx
+}
+
+.plat{
+  position: absolute;
+  bottom:100rpx;
+  left:12rpx;
+}
+
+.plat .location{
+  width:100rpx;
+  height:100rpx
+}
+
+.mine{
+  position:absolute;
+  bottom:360rpx;
+  left:120rpx;
+}
+
+.mine .my{
+  width:36rpx;
+  height:36rpx
+}

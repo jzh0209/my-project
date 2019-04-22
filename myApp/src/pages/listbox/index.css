@@ -1,0 +1,49 @@
+.wrap{
+  width:100%;
+  height:100%;
+  background: #eee;
+}
+.list{
+  width:100%;
+  height:100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.oli{
+  width:100%;
+  height:280rpx;
+  background:#fff;
+  margin-top:12rpx;
+}
+
+.oli .oh3{
+  width:100%;
+  height:79rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:0 26rpx 0 26rpx;
+  box-sizing: border-box;
+}
+
+.oli .ospan{
+  width:100%;
+  height:79rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:0 26rpx 0 26rpx;
+  box-sizing: border-box;
+}
+
+.oli .op{
+  width:100%;
+  height:79rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:0 26rpx 0 26rpx;
+  box-sizing: border-box;
+}

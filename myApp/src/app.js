@@ -13,7 +13,11 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/personal/index', //个人中心页面
+      'pages/add/index', //添加面试页面
+      'pages/site/index', //添加面试地址页面
+      'pages/listbox/index' //面试列表页面
     ],
     window: {
       backgroundTextStyle: 'light',

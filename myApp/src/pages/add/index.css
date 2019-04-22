@@ -1,0 +1,61 @@
+.box{
+  width:100%;
+  height:100%;
+  background:#eee;
+}
+.op{
+  width:100%;
+  height:72rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:12rpx;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.list .oli{
+  width:100%;
+  height:100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 12rpx 0 12rpx;
+  box-sizing: border-box;
+  border-bottom:1rpx solid #ccc;
+  background:#fff;
+}
+.list .oli .oh3{
+    flex:3.5;
+}
+.list .oli .oinput{
+    flex:6.5;
+    width:100%;
+    height: 100rpx;
+    line-height:100rpx;
+}
+.content{
+  width:100%;
+  padding-top:20rpx;
+  height:260rpx;
+  background:#fff;
+  display: flex;
+  justify-content: space-around;
+}
+.textarea{
+  width:90%;
+  height:200rpx;
+  border:1rpx solid #ccc;
+  padding:12rpx;
+}
+.time{
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  text-align:center;
+  background:pink;
+  z-index:999;
+  line-height:100rpx;
+}
