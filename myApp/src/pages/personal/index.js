@@ -29,10 +29,17 @@ export default class Index extends Component {
           <Image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1220476279,33108505&fm=27&gp=0.jpg" />
         </View>
         <View className='list'>
-          <View className='oli'>我的面试</View>
+          <View className='oli' onClick={this.myInter.bind(this)}>我的面试</View>
           <View className='oli'>客服中心</View>
         </View>
       </View>
     )
+  }
+
+  //点击跳转我的面试
+  myInter(){
+    wx.navigateTo({
+      url: '/pages/listbox/index',
+    })
   }
 }

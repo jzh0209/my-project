@@ -37,14 +37,3 @@
   width:100rpx;
   height:100rpx
 }
-
-.mine{
-  position:absolute;
-  bottom:360rpx;
-  left:120rpx;
-}
-
-.mine .my{
-  width:36rpx;
-  height:36rpx
-}

@@ -23,16 +23,6 @@ export default class Index extends Component {
 
   constructor(props){
     super(props)
-    this.state = {
-      markers: [{
-        iconPath: 'mine',
-        id: 0,
-        latitude: 116.300278,
-        longitude: 40.040848,
-        width: 50,
-        height: 50
-      }]
-    }
   }
 
   render () {
@@ -40,9 +30,9 @@ export default class Index extends Component {
       <View className='wrap'>
         <Map
           id="map"
-          latitude="40.0403270000"
+          longitude="116.300278"
+          latitude="40.040848"
           scale="14"
-          markers="markers"
           show-location
           style="width: 100%; height: 100%;"
           ></Map>
@@ -55,11 +45,6 @@ export default class Index extends Component {
         <View className="plat" onClick={this.plat.bind(this)}>
           <CoverView class='location' onClick='plat'>
             <CoverImage class='location' src={location} />
-          </CoverView>
-        </View>
-        <View className="mine" onClick={this.mine.bind(this)}>
-          <CoverView class='my' onClick='plat'>
-            <CoverImage class='mine' src={mine} />
           </CoverView>
         </View>
       </View>
@@ -75,7 +60,7 @@ export default class Index extends Component {
 
   //点击跳转到个人中心页面
   personal(){
-    wx.navigateTo({
+    wx.navigateTo({ 
       url: '/pages/personal/index',
     })
   }
@@ -86,21 +71,21 @@ export default class Index extends Component {
     mpCtx.moveToLocation();
   }
 
-  // onLoad () {
-  //   console.log('地图定位！')
-  //   var that = this
-  //   wx.getLocation({
-  //     type: 'gcj02', //返回可以用于wx.openLocation的经纬度
-  //     success: function (res) {
-  //       var latitude = res.latitude;
-  //       var longitude = res.longitude;
-  //       wx.openLocation({
-  //         latitude: latitude,
-  //         longitude: longitude,
-  //         scale: 1
-  //       })
-  //     }
-  //   });
-  // }
+  onLoad () {
+    console.log('地图定位！')
+    var that = this
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success: function (res) {
+        var latitude = res.latitude;
+        var longitude = res.longitude;
+        wx.openLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 1
+        })
+      }
+    });
+  }
 
 }
